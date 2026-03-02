@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSharpFundamentals.ChapterSupport;
+using CSharpFundamentals.Debugging;
 using System.Text;
+using System.Linq;
 
 // Validate inputs before processing to prevent invalid program states.
 // Key terms in this chapter:

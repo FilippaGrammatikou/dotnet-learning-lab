@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSharpFundamentals.ChapterSupport;
+using CSharpFundamentals.Debugging;
 using System.Text;
+using System.Linq;
 
 // Learn to monitor important values while stepping through code.
 // Key terms in this chapter:

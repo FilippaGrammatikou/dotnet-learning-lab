@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSharpFundamentals.ChapterSupport;
+using CSharpFundamentals.Debugging;
 using System.Text;
+using System.Linq;
 
 // Identify and eliminate a side effect caused by mutating input data.
 // Key terms in this chapter:

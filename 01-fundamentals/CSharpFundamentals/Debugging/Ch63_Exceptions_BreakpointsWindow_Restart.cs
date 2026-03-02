@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSharpFundamentals.ChapterSupport;
+using CSharpFundamentals.Debugging;
 using System.Text;
+using System.Linq;
 
 // Learn how to debug crashes and manage breakpoints efficiently.
 // Key terms in this chapter:

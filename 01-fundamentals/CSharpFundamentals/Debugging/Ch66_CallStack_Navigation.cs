@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using CSharpFundamentals.ChapterSupport;
+using CSharpFundamentals.Debugging;
 using System.Text;
+using System.Linq;
 
 // Learn how to trace the path of method calls that led to the current line.
 // Key terms in this chapter:
