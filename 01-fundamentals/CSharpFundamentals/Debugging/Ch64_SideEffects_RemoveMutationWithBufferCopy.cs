@@ -18,9 +18,38 @@ namespace CSharpFundamentals.Debugging
     {
         public static void Run()
         {
+            var numbers = new List<int> { 1, 2 }; //reduce the list to 2 numbers on porpuse. It will cause an "OUT OF RANGE" Exception
+            var smallests = GetSmallests(numbers, 3);
 
+            foreach (var number in smallests)
+                Console.WriteLine(number);
 
-            Console.ReadKey();
+            Console.ReadLine();
+        }
+
+        public static List<int> GetSmallests(List<int> list, int count)
+        {
+            var smallests = new List<int>();
+
+            while (smallests.Count < count)
+            {
+                var minim = GetSmallest(list);
+                smallests.Add(minim);
+                list.Remove(minim);
+            }
+            return smallests;
+        }
+        public static int GetSmallest(List<int> list)
+        {
+
+            var min = list[0];
+
+            for (var i = 1; i < list.Count; i++)
+            {
+                if (list[i] < min)
+                    min = list[i];
+            }
+            return min;
         }
     }
 }
