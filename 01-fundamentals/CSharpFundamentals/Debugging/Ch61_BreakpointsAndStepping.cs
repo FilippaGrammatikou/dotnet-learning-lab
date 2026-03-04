@@ -10,6 +10,7 @@ using System.Linq;
 // Breakpoint (F9): A marker that pauses execution at a specific line.
 // Debug Mode (F5): Runs the app with debugging enabled.
 // Run Without Debugging (Ctrl+F5): Runs normally without pausing.
+
 // Step Over (F10): Executes the current line without entering method calls.
 // Step Into (F11): Enters a called method to inspect its internals.
 // Step Out (Shift+F11): Finishes the current method and returns to caller.
@@ -22,8 +23,8 @@ namespace CSharpFundamentals.Debugging
         public static void Run()
         {
             {
-                var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
-                var smallests = GetSmallests(numbers, 3);
+                var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };  //added a breakpoint example, pressing F10 excecutes one line at a time
+                var smallests = GetSmallests(numbers, 3); // inspecting var smallests, notice of possible issue. F11 to step into
 
                 foreach (var number in smallests)
                     Console.WriteLine(number);
@@ -38,7 +39,7 @@ namespace CSharpFundamentals.Debugging
 
             while (smallests.Count < count)
             {
-                var minim = GetSmallest(list);
+                var minim = GetSmallest(list); //proves sth is deffinetely wrong with this method 
                 smallests.Add(minim);
                 list.Remove(minim);
             }
