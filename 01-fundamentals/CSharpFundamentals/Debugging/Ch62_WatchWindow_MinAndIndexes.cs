@@ -13,14 +13,46 @@ using System.Linq;
 // * Example: 'i' is only available inside the for-loop scope.
 
 namespace CSharpFundamentals.Debugging
-{
-    internal class Ch62_WatchWindow_MinAndIndexes
     {
-        public static void Run()
+        internal class Ch62_WatchWindow_MinAndIndexes
         {
+            public static void Run()
+            {
+                {
+                    var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };  
+                    var smallests = GetSmallests(numbers, 3);
 
+                    foreach (var number in smallests)
+                        Console.WriteLine(number);
 
-            Console.ReadKey();
+                    Console.ReadLine();
+                }
+            }
+
+            public static List<int> GetSmallests(List<int> list, int count)
+            {
+                var smallests = new List<int>();
+
+                while (smallests.Count < count)
+                {
+                    var minim = GetSmallest(list); //proves sth is deffinetely wrong with this method 
+                    smallests.Add(minim);
+                    list.Remove(minim);
+                }
+                return smallests;
+            }
+            public static int GetSmallest(List<int> list)
+            {
+                //Assume the first number is the smallest
+                var min = list[0];
+
+                for (var i = 1; i < list.Count; i++)
+                {
+                    if (list[i] < min) // bug
+                        min = list[i];
+                }
+                return min;
+            }
         }
     }
-}
+
