@@ -18,7 +18,7 @@ namespace CSharpFundamentals.Debugging
     {
         public static void Run()
         {
-            var numbers = new List<int> { 1, 2 };
+            var numbers = new List<int> { 1, 2, 3, 4, 5, 6 };
             var smallests = GetSmallests(numbers, 3); 
             
             foreach (var number in smallests)
@@ -50,7 +50,8 @@ namespace CSharpFundamentals.Debugging
         public static int GetSmallest(List<int> list)
         {
             //Assume the first number is the smallest
-            var min = list[0]; 
+            var min = list[0];  //via debug, windows, Call Stack I can easily redirect myself here
+            // call stack top is where we last were stationed
 
             for (var i = 1; i < list.Count; i++)
             {
