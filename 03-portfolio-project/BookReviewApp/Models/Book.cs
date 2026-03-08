@@ -7,5 +7,8 @@
         public DateTime ReleaseDate { get; set; }
         // one-to-many relationship
         public ICollection<Review> Reviews{  get; set; } 
+        public ICollection<BookAuthor> BookAuthors { get; set; }
+        public ICollection<BookCategory> BookCategories { get; set; }
+
     }
 }
