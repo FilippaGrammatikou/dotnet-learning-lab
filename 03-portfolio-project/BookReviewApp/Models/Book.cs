@@ -5,5 +5,7 @@
         public int Id { get; set; }
         public string Title { get; set; }
         public DateTime ReleaseDate { get; set; }
+        // one-to-many relationship
+        public ICollection<Review> Reviews{  get; set; } 
     }
 }
