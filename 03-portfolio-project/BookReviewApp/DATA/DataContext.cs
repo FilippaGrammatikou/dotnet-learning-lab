@@ -13,6 +13,7 @@ namespace BookReviewApp.DATA
         public DbSet<BookCategory> BookCategories { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<Review> Reviews { get; set; }
+        public DbSet<Reviewer> Reviewers { get; set; }
 
         //method that allows us to customize how EF builds tables and relationships
         protected override void OnModelCreating(ModelBuilder modelBuilder) 
