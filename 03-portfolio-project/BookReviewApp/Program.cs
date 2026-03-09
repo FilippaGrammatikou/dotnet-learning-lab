@@ -1,5 +1,7 @@
 using BookReviewApp;
 using BookReviewApp.DATA;
+using BookReviewApp.Interfaces;
+using BookReviewApp.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,8 @@ builder.Services.AddTransient<Seed>();
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//Add Dependency Injection for our Repository
+builder.Services.AddScoped<IBookRepository, BookRepository>(); 
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
