@@ -8,5 +8,6 @@
         public DateTime ReviewDate { get; set; }
         public Reviewer Reviewer { get; set; }
         public Book Book { get; set; }
+        public int Rating { get; set; }
     }
 }
