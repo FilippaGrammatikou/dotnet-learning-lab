@@ -2,7 +2,6 @@
 using BookReviewApp.Interfaces;
 using BookReviewApp.Models;
 using BookReviewApp.Repository;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookReviewApp.Controllers
