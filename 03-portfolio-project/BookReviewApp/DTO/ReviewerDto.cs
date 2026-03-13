@@ -1,4 +1,4 @@
-﻿namespace BookReviewApp.Dto
+﻿namespace BookReviewApp.DTO
 {
     public class ReviewerDto
     {
