@@ -1,6 +1,5 @@
 ﻿using BookReviewApp.DTO;
 using BookReviewApp.Interfaces;
-using BookReviewApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookReviewApp.Controllers
