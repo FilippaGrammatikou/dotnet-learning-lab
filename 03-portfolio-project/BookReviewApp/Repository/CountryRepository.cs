@@ -33,6 +33,16 @@ namespace BookReviewApp.Repository
         {
             return _context.Countries.Any(c => c.Id==countryId);
         }
+        public bool UpdateCountry(Country country)
+        {
+            _context.Update(country);
+            return Save();
+        }
+        private bool Save()
+        {
+            var saved = _context.SaveChanges();
+            return saved > 0 ? true : false;
+        }
 
         public ICollection<Author> GetAuthorsFromCountry(int countryId)
         {
