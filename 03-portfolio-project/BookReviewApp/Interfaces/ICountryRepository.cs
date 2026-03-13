@@ -9,5 +9,6 @@ namespace BookReviewApp.Interfaces
         Country GetCountryByAuthor(int authorId);
         bool CountryExists(int countryId);
         ICollection<Author> GetAuthorsFromCountry(int countryId);
+        bool UpdateCountry(Country country);
     }
 }
