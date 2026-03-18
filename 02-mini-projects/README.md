@@ -1,17 +1,17 @@
 # 02-mini-projects
 
-> Small applied C# projects used to turn core concepts into working code.
+> Small C# console projects used to turn core concepts into working programs.
 
-This section focuses on implementation practice: taking individual language features and using them in small, self-contained programs with clearer logic, structure, and output.
+This section contains applied practice projects built while moving beyond isolated syntax exercises. The work here focuses on implementing small, self-contained programs with clearer logic, user input handling, and problem-solving structure.
 
 ## Areas of practice
 
-- LINQ and collection processing
-- filtering, sorting, and projection
-- grouping and aggregation
-- null handling and safe lookups
-- small-scale object modelling
-- translating concepts into executable solutions
+- console-based program flow
+- arithmetic and basic logic
+- conditional branching and switch-based logic
+- user input handling and validation
+- randomisation and simple game mechanics
+- collections and introductory LINQ practice
 
 ## Context
-These projects act as a bridge between language fundamentals and larger backend-oriented work.
+This folder sits between foundational language study and larger backend-oriented work. Most projects here are small console applications, with `LINQ_TicketProgram` representing a more structured step toward collection processing and object-based modelling.
