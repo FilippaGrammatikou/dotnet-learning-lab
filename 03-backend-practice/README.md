@@ -1,6 +1,8 @@
-# 03-portfolio-project
+# 03-backend-practice
 
 > Early backend-focused .NET work built with ASP.NET Core, EF Core, and SQL Server.
+
+---
 
 This section marks the transition from isolated exercises to more complete application work, with emphasis on API structure, data access, and backend development patterns.
 
