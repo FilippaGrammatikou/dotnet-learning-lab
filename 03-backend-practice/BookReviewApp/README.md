@@ -13,7 +13,7 @@ This project explores backend application structure in .NET through a database-b
 - Entity Framework Core with SQL Server
 - migrations and seeded sample data
 - dependency injection setup
-- OpenAPI support and HTTP request testing material
+- OpenAPI support and API testing with Postman
 
 ## Context
 This is a learning-stage API project rather than a final production-ready implementation. It represents an early step from console-based C# work toward structured backend development with ASP.NET Core and EF Core.

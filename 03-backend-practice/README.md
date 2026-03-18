@@ -12,7 +12,7 @@ This section marks the transition from isolated exercises to more complete appli
 - Entity Framework Core
 - SQL Server integration
 - repositories and application structure
-- migrations, seeding, and request testing
+- migrations, seeding, and API testing with Postman
 
 ## Context
 The projects here are stronger than the earlier practice folders, but still part of a broader learning progression rather than final flagship portfolio work.
